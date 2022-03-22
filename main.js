@@ -10,5 +10,4 @@ function createWindow(){
     })
     ventana.loadFile('index.html')
 }
-
 app.whenReady().then(createWindow)
