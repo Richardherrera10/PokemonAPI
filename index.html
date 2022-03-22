@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pokemon</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <form name= "form1" id="form1" method="get"> 
+            <h1>Buscar datos de Pokemon</h1>
+            
+            <div id="escribirPokemon" class ="escribirPokemon">
+                <label>Nombre</label>
+            
+                <input type="text" name="search" id = "nombre"/>
+                
+                
+                <button id="consultar">Consultar</button>
+                <button id="borrar">Borrar</button>
+            </div>
+
+
+        </form>
+
+        <table id="tablaPokemon" style="display: none">
+            <tr>
+                <td rowspan="0" id="pokeIMG"></td>
+                <th>Nombre</th>
+                <td id="pokeName"></td>
+            </tr>
+            <tr>
+                <th>Tipo</th>
+                <td id="pokeType"></td>
+            </tr>
+            <tr>
+                <th>Peso</th>
+                <td id="pokeWeight"></td>
+            </tr>
+            <tr>
+                <th>Altura</th>
+                <td id="pokeHeight"></td>
+            </tr>
+            <tr>
+                <th>Habilidades</th>
+                <td id="pokeHab"></td>
+            </tr>
+           </table>
+
+        <script type="text/javascript"src="index.js"></script>
+    </body>
+</html>
