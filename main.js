@@ -26,7 +26,6 @@ ipcMain.on('consultarPokemon', function(event, args){
 
 //insertar consulta del API a la DB
 async function insertDB(pokemon) {
-   
     const connection = await mysql.createConnection({host:'localhost', user: 'root', password: '3v@ng3l10nE', database: 'pokemonAPI'});
    
     const [rows] = await connection.query("INSERT INTO pokemon(fecha, imagen, nombre, tipo, peso, altura, habilidades)"+
