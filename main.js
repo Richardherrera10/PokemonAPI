@@ -36,15 +36,9 @@ async function insertDB(pokemon) {
 
 //Consultar información de la DB
 async function consultaDB(pokemon) {
-   
     const connection = await mysql.createConnection({host:'localhost', user: 'root', password: '3v@ng3l10nE', database: 'pokemonAPI'});
-
     const [rows, fields] = await connection.execute("SELECT * FROM pokemon where nombre = ?", [pokemon]);
-    ventana.webContents.send("enviarConsulta", rows)
-   
-   
- 
-    
+    ventana.webContents.send("enviarConsulta", rows)    
 }
 
 app.whenReady().then(createWindow)
