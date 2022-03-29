@@ -3,19 +3,23 @@
     <head>
         <title>Pokemon</title>
         <link rel="stylesheet" href="style.css">
+        <script type = "text/JavaScript" src = "https://MomentJS.com/downloads/moment.js"></script>
     </head>
     <body>
         <form name= "form1" id="form1" method="get"> 
-            <h1>Buscar datos de Pokemon</h1>
+            <h1 id="titulo">Buscar datos de Pokemon</h1>
             
             <div id="escribirPokemon" class ="escribirPokemon">
-                <label>Nombre</label>
+                <label>Nombre de Pokemon: </label>
             
                 <input type="text" name="search" id = "nombre"/>
                 
-                
-                <button id="consultar">Consultar</button>
-                <button id="borrar">Limpiar</button>
+                <div class="botones">
+                    <button id="consultar">Consultar<br> API</button>
+                    <button id="borrar">Limpiar<br>Datos</button>
+                    <button id="guardar">Guardar a <br>Base de Datos</button>
+                    <button id="baseDatos">Consultar<br> Base de Datos</button>
+                </div>
             </div>
 
 
@@ -44,7 +48,8 @@
                 <td id="pokeHab"></td>
             </tr>
            </table>
+           <h3 id="fecha"> </h3>
 
-        <script type="text/javascript"src="index.js"></script>
+        <script type="text/javascript" src="index.js "  ></script>
     </body>
 </html>
